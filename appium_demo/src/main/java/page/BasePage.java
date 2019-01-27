@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class BasePage {
-    static WebElement find(By locator){
+    public static WebElement find(By locator){
 
         return Driver.getCurrentDriver().findElement(locator);
     }
@@ -18,7 +18,8 @@ public class BasePage {
         }
     }
 
-    static By text(String content){
+    public static By text(String content){
+
         return By.xpath("//*[@text='" + content + "']");
     }
 }

@@ -20,4 +20,10 @@ public class MainPage extends BasePage{
         find(By.id("home_search")).click();
         return new SearchPage();
     }
+
+    public StockDetailPage gotoDetail(String keyword){
+        By name = text(keyword);
+        find(name).click();
+        return new StockDetailPage();
+    }
 }

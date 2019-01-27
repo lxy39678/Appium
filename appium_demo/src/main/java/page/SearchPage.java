@@ -24,9 +24,6 @@ public class SearchPage extends BasePage {
         return array;
     }
 
-    public SearchPage getByStock(){
-        return this;
-    }
 
     public ArrayList<String> addSelected(){
         ArrayList<String> array = new ArrayList<String>();
@@ -38,7 +35,4 @@ public class SearchPage extends BasePage {
         return array;
     }
 
-    public SearchPage removeSelected(){
-        return this;
-    }
 }
