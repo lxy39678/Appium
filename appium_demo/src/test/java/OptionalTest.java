@@ -33,5 +33,4 @@ public class OptionalTest {
         stockDetailPage.Selected();
         stockDetailPage.Unselected();
     }
-
 }
